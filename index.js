@@ -34,7 +34,7 @@ function checkAnswer(currentLevel) {
     setTimeout(() => {
       $("body").removeClass("game-over");
       location.reload();
-    },3000);
+    },2500);
     new Audio("sounds/wrong.mp3").play();
     $("h1").text(`GAME-OVER , you made it to level ${level}`);
   }
