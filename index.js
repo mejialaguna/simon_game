@@ -1,3 +1,4 @@
+const name = prompt("Hey player , what should call you?")
 var gamePattern = [];
 var userClickedPattern = [];
 const btnColor = ["red", "blue", "green", "yellow"];
@@ -48,7 +49,7 @@ function nextSequence() {
   userClickedPattern = [];
 
   level++;
-  $("h1").text("Level " + level);
+  $("h1").text(`Hey ${name} , you are on Level ${level}`);
   const randomNumber = Math.floor(Math.random() * 4);
   const randomChosenColor = btnColor[randomNumber];
   gamePattern.push(randomChosenColor);
