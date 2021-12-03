@@ -51,3 +51,18 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+
+
+@media (min-height: 500px), screen and (orientation: portrait) { 
+
+  .container{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+ }
+
+
+
+    

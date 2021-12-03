@@ -1,8 +1,8 @@
-const name = prompt("Hey player , what should call you?")
+const name = prompt("Hey player , what should i call you?")
 var gamePattern = [];
 var userClickedPattern = [];
 const btnColor = ["red", "blue", "green", "yellow"];
-const message = ["GAME-OVER , LOSER GO BACK TO SCHOOL" , "NEXT TIME BRUH" , "WHAT A DISAPPOINTMENT" , "UH , IDK WHY YOU GO TO SCHOOL" , "YOU SNOOZED , YOU LOSE"];
+const message = ["GAME-OVER , LOSER GO BACK TO SCHOOL" , "MAYBE NEXT TIME BRUH" , "WHAT A DISAPPOINTMENT" , "UH , IDK WHY YOU GO TO SCHOOL" , "YOU SNOOZED , YOU LOSE"];
 var started = false;
 var level = 0;
 
@@ -40,7 +40,7 @@ function checkAnswer(currentLevel) {
     new Audio("sounds/wrong.mp3").play();
     const randomNumber = Math.floor(Math.random() * 5);
     randomMessage = message[randomNumber]
-    $("h1").text(`made it to level ${ level} , ${randomMessage} `);
+    $("h1").text(` ${randomMessage} ,you made it to level ${level} , ${name}`);
   }
 }
 
