@@ -4,7 +4,7 @@ const btnColor = ["red", "blue", "green", "yellow"];
 var started = false;
 var level = 0;
 
-$(document).keypress(function () {
+$(document).bind("click , keypress" , function () {
   if (!started) {
     $("h1").text("Level " + level);
     nextSequence();
