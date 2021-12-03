@@ -1,6 +1,7 @@
 var gamePattern = [];
 var userClickedPattern = [];
 const btnColor = ["red", "blue", "green", "yellow"];
+const message = ["GAME-OVER , LOSER GO BACK TO SCHOOL" , "NEXT TIME BRUH" , "WHAT A DISAPPOINTMENT" , "UH , IDK WHY YOU GO TO SCHOOL" , "YOU SNOOZED , YOU LOSE"];
 var started = false;
 var level = 0;
 
@@ -34,9 +35,11 @@ function checkAnswer(currentLevel) {
     setTimeout(() => {
       $("body").removeClass("game-over");
       location.reload();
-    },2500);
+    },3500);
     new Audio("sounds/wrong.mp3").play();
-    $("h1").text(`GAME-OVER , you made it to level ${level}`);
+    const randomNumber = Math.floor(Math.random() * 5);
+    randomMessage = message[randomNumber]
+    $("h1").text(`made it to level ${ level} , ${randomMessage} `);
   }
 }
 
