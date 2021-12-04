@@ -54,15 +54,10 @@ body {
 
 
 
-@media (min-height: 500px), screen and (orientation: portrait) { 
-
+@media (max-height: 1120px), screen and (orientation: portrait) { 
   .container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;    
   }
 
  }
-
-
-
-    
